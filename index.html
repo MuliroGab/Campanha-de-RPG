@@ -1,59 +1,173 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Crônicas da Campanha</title>
-
+    <title>Crônicas de Eldoria - Campanha de RPG</title>
     <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <header>
-
-        <div class="logo">
-            <img src="Logo-rpg.png" alt="Logo da Campanha">
-        </div>
-
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#personagens">Personagens</a>
-            <a href="#sessoes">Sessões</a>
-            <a href="#galeria">Galeria</a>
-            <a href="#mapas">Mapas</a>
-            <a href="#videos">Vídeos</a>
-        </nav>
-
+    <!-- HERO HEADER -->
+    <header class="hero">
+        <h1>Crônicas de Eldoria</h1>
+        <p class="subtitle">Onde o destino é forjado a cada dado</p>
+        <div class="divider"></div>
     </header>
 
-    <main>
+    <!-- NAVEGAÇÃO -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#historia">História</a></li>
+            <li><a href="#personagens">Heróis</a></li>
+            <li><a href="#sessoes">Sessões</a></li>
+            <li><a href="#mapa">Mapa</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+        </ul>
+    </nav>
 
-        <section id="inicio"></section>
+    <!-- SEÇÃO: INTRODUÇÃO -->
+    <section class="section" id="inicio">
+        <h2 class="section-title">📜 Boas-vindas, Aventureiro</h2>
+        <p class="section-subtitle">Que os deuses antigos guiem seus passos</p>
+        
+        <div class="intro-card">
+            <p>
+                Bem-vindo às <strong>Crônicas de Eldoria</strong>, uma campanha épica onde heróis improváveis se unem para enfrentar as forças sombrias que ameaçam consumir o reino. 
+                Aqui você encontrará o registro de nossas aventuras, os perfis dos bravos aventureiros e os segredos que descobrimos ao longo do caminho.
+            </p>
+            <p style="margin-top: 15px;">
+                Prepare seu grimório, afie sua espada e junte-se a nós nesta jornada através de terras misteriosas, ruínas ancestrais e batalhas inesquecíveis!
+            </p>
+        </div>
+    </section>
 
-        <section id="personagens"></section>
+    <!-- SEÇÃO: HISTÓRIA -->
+    <section class="section" id="historia">
+        <h2 class="section-title">🏰 A História Até Agora</h2>
+        <p class="section-subtitle">Os pergaminhos contam...</p>
+        
+        <div class="intro-card">
+            <p>
+                Há mil anos, o Rei Feiticeiro <strong>Morgath</strong> foi aprisionado nas profundezas do Abismo pelos Guardiões Elementais. 
+                Mas as barreiras entre os mundos estão se enfraquecendo, e cultistas sombrios trabalham para libertá-lo.
+            </p>
+            <p style="margin-top: 15px;">
+                Nosso grupo foi reunido pelo misterioso Conselho de Prata após estranhos acontecimentos nas fronteiras do reino. 
+                O que começou como uma simples missão de investigação revelou-se o prelúdio de uma guerra que pode decidir o destino de toda Eldoria.
+            </p>
+            <p style="margin-top: 15px;">
+                A cada sessão, novos aliados surgem, antigos inimigos revelam suas verdadeiras faces e o véu entre a realidade e os planos sombrios se torna cada vez mais tênue...
+            </p>
+        </div>
+    </section>
 
-        <section id="sessoes"></section>
+    <!-- SEÇÃO: PERSONAGENS -->
+    <section class="section" id="personagens">
+        <h2 class="section-title">⚔️ Os Heróis da Profecia</h2>
+        <p class="section-subtitle">Forjados pelo destino, unidos pela coragem</p>
+        
+        <div class="players-grid">
+            <!-- Card do personagem 1 -->
+            <div class="player-card">
+                <div class="icon">🛡️</div>
+                <h3>Thorin Barba de Ferro</h3>
+                <p class="class">Anão Guerreiro — Nível 5</p>
+                <p class="description">
+                    Ex-capitão da guarda de Khazad-Vorn, Thorin busca vingança contra os cultistas que destruíram seu clã. 
+                    Empunha o martelo ancestral "Quebra-Rochas" e nunca abandona um aliado em perigo.
+                </p>
+            </div>
 
-        <section id="galeria"></section>
+            <!-- Card do personagem 2 -->
+            <div class="player-card">
+                <div class="icon">🧝</div>
+                <h3>Lyanna Vento Prateado</h3>
+                <p class="class">Elfa Arqueira — Nível 5</p>
+                <p class="description">
+                    Última sobrevivente da Floresta Sussurrante, Lyanna possui uma conexão profunda com a magia antiga. 
+                    Seu arco élfico canta a cada flecha disparada, guiada pelos espíritos da natureza.
+                </p>
+            </div>
 
-        <section id="mapas"></section>
+            <!-- Card do personagem 3 -->
+            <div class="player-card">
+                <div class="icon">📖</div>
+                <h3>Mestre Alaric</h3>
+                <p class="class">Humano Mago — Nível 5</p>
+                <p class="description">
+                    Estudioso das artes arcanas e membro da Ordem do Pergaminho Eterno, Alaric busca conhecimentos perdidos 
+                    que possam deter o retorno de Morgath. Seu grimório contém segredos que nem mesmo ele compreende totalmente.
+                </p>
+            </div>
+        </div>
+    </section>
 
-        <section id="videos"></section>
+    <!-- SEÇÃO: LINHA DO TEMPO DAS SESSÕES -->
+    <section class="section" id="sessoes">
+        <h2 class="section-title">📅 Jornada dos Heróis</h2>
+        <p class="section-subtitle">Cada passo, uma lenda</p>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <h4>Sessão 1 — O Chamado</h4>
+                <p>O Conselho de Prata convoca o grupo para investigar desaparecimentos nas Minas de Ferro Negro. 
+                   Primeiro encontro entre os heróis e descoberta de símbolos ritualísticos.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <h4>Sessão 2 — Escuridão nas Profundezas</h4>
+                <p>Ao explorar as minas, o grupo enfrenta criaturas corrompidas e encontra um altar dedicado ao Rei Feiticeiro. 
+                   Resgate de prisioneiros e primeira pista sobre a localização dos cultistas.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <h4>Sessão 3 — A Torre do Crepúsculo</h4>
+                <p>Os heróis viajam até uma torre abandonada onde descobrem um portal instável para o Plano das Sombras. 
+                   Confronto com um cultista de alto escalão e obtenção de um artefato misterioso.</p>
+            </div>
+        </div>
+    </section>
 
-    </main>
+    <!-- SEÇÃO: MAPA -->
+    <section class="section" id="mapa">
+        <h2 class="section-title">🗺️ Mapa de Eldoria</h2>
+        <p class="section-subtitle">Terras desconhecidas aguardam</p>
+        
+        <div class="map-container">
+            <div class="map-placeholder">
+                <span class="map-icon">🗺️</span>
+                <p class="map-text">O mapa será revelado conforme a exploração avança...</p>
+                <p class="map-hint">(Adicione aqui uma imagem do mapa da sua campanha)</p>
+            </div>
+        </div>
+    </section>
 
-    <footer></footer>
+    <!-- SEÇÃO: GALERIA -->
+    <section class="section" id="galeria">
+        <h2 class="section-title">🎨 Galeria de Memórias</h2>
+        <p class="section-subtitle">Momentos que ficarão para a eternidade</p>
+        
+        <div class="gallery">
+            <div class="gallery-item">🖼️</div>
+            <div class="gallery-item">🖼️</div>
+            <div class="gallery-item">🖼️</div>
+            <div class="gallery-item">🖼️</div>
+            <div class="gallery-item">🖼️</div>
+            <div class="gallery-item">🖼️</div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <p>⚔️ Crônicas de Eldoria — Campanha de RPG ⚔️</p>
+        <p class="footer-sub">Que os dados sempre rolem a seu favor</p>
+    </footer>
+
+    <!-- BOTÃO VOLTAR AO TOPO -->
+    <button class="back-to-top" aria-label="Voltar ao topo">⬆</button>
 
     <script src="script.js"></script>
-
 </body>
-
 </html>
