@@ -71,14 +71,14 @@ header{
     display: flex;
     align-items: center;
 
-    gap: 30px;
+    gap: 10px;
 
 }
 
 .logo img{
 
-    width: 300px;
-    height: auto;
+    width: 250px;
+    height: 200px;
 
 
 }
