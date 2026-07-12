@@ -68,10 +68,10 @@ header{
 
 .logo{
 
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
 
-    gap:15px;
+    gap: 30px;
 
 }
 
@@ -79,7 +79,7 @@ header{
 
     width: 200px;
     height: auto;
-    border: 1px solid red;
+
 
 }
 
