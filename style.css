@@ -1,0 +1,374 @@
+/* ============================
+   RESET
+============================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #141414;
+    color: #f5f0e1;
+    font-family: "Cormorant Garamond", serif;
+    line-height: 1.6;
+}
+
+/* ============================
+   VARIÁVEIS
+============================ */
+
+:root{
+    --background: #141414;
+    --background2: #1d1d1d;
+    --gold: #d4af37;
+    --gold-light: #f1d67a;
+    --text: #f5f0e1;
+    --red: #7b1e1e;
+    --border: rgba(212,175,55,.2);
+}
+
+/* ============================
+   HEADER
+============================ */
+
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:rgba(20,20,20,.90);
+    backdrop-filter: blur(10px);
+
+    border-bottom:1px solid var(--border);
+
+    z-index:1000;
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+}
+
+.logo img{
+
+    width:55px;
+    height:55px;
+    object-fit:cover;
+
+}
+
+.logo h1{
+
+    font-family:"Cinzel", serif;
+    color:var(--gold);
+    font-size:1.6rem;
+
+}
+
+nav{
+
+    display:flex;
+    gap:35px;
+
+}
+
+nav a{
+
+    color:var(--text);
+    text-decoration:none;
+
+    font-family:"Cinzel", serif;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+nav a:hover{
+
+    color:var(--gold);
+
+}
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-6px;
+    left:0;
+
+    width:0%;
+    height:2px;
+
+    background:var(--gold);
+
+    transition:.3s;
+
+}
+
+nav a:hover::after{
+
+    width:100%;
+
+}
+
+/* ============================
+   MAIN
+============================ */
+
+main{
+
+    margin-top:100px;
+
+}
+
+/* ============================
+   SECTIONS
+============================ */
+
+section{
+
+    min-height:100vh;
+
+    padding:100px 8%;
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+section h2{
+
+    text-align:center;
+
+    font-family:"Cinzel", serif;
+
+    color:var(--gold);
+
+    font-size:2.5rem;
+
+    margin-bottom:40px;
+
+}
+
+section p{
+
+    font-size:1.2rem;
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+/* ============================
+   HERO
+============================ */
+
+#inicio{
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("../imagens/background.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+}
+
+#inicio h2{
+
+    font-size:4rem;
+
+}
+
+#inicio p{
+
+    font-size:1.4rem;
+
+    margin-top:20px;
+
+    max-width:700px;
+
+}
+
+/* ============================
+   CARDS
+============================ */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+.card{
+
+    background:var(--background2);
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--gold);
+
+}
+
+.card img{
+
+    width:100%;
+    height:320px;
+
+    object-fit:cover;
+
+}
+
+.card h3{
+
+    font-family:"Cinzel", serif;
+
+    color:var(--gold);
+
+    padding:15px 20px 0;
+
+}
+
+.card p{
+
+    text-align:left;
+
+    padding:10px 20px 20px;
+
+}
+
+/* ============================
+   GALERIA
+============================ */
+
+.galeria{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+}
+
+.galeria img{
+
+    width:100%;
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.galeria img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ============================
+   FOOTER
+============================ */
+
+footer{
+
+    padding:30px;
+
+    text-align:center;
+
+    border-top:1px solid var(--border);
+
+    color:#c9c2b0;
+
+}
+
+/* ============================
+   RESPONSIVO
+============================ */
+
+@media(max-width:900px){
+
+    header{
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+    nav{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:15px;
+
+    }
+
+    #inicio h2{
+
+        font-size:2.8rem;
+
+    }
+
+    section h2{
+
+        font-size:2rem;
+
+    }
+
+}
